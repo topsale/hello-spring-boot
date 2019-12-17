@@ -1,0 +1,36 @@
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: hello-spring-boot
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.2.121:3306/myshop?useUnicode=true&characterEncoding=utf-8&serverTimezone=Hongkong&useSSL=false
+    username: root
+    password: 123456
+    hikari:
+      minimum-idle: 5
+      idle-timeout: 600000
+      maximum-pool-size: 10
+      auto-commit: true
+      pool-name: MyHikariCP
+      max-lifetime: 1800000
+      connection-timeout: 30000
+      connection-test-query: SELECT 1
+
+server:
+  port: 8080
+
+mybatis:
+  type-aliases-package: com.funtl.hello.spring.boot.domain
+  mapper-locations: classpath:mapper/*.xml
+
+logging:
+  # 说明：可以使用 path 和 name 进行配置，但只有一项会生效
+  file:
+    # 只设置路劲则日志文件名为 spring.log
+    # path: logs
+    # 只设置 name 需要配置 路径/文件名
+    name: logs/spring-boot-hello.log
+  level.org.springframework.web: DEBUG

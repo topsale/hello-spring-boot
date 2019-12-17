@@ -1,0 +1,30 @@
+2019-12-18 04:12:50.897  INFO 7868 --- [main] .h.s.b.t.HelloSpringBootApplicationTests : Starting HelloSpringBootApplicationTests on DESKTOP-6ERMRFQ with PID 7868 (started by Lusifer in D:\Workspaces\Git\github\topsale\hello-spring-boot)
+2019-12-18 04:12:50.899  INFO 7868 --- [main] .h.s.b.t.HelloSpringBootApplicationTests : No active profile set, falling back to default profiles: default
+2019-12-18 04:12:52.247  INFO 7868 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2019-12-18 04:12:52.260  INFO 7868 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-18 04:12:52.260  INFO 7868 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-18 04:12:52.401  INFO 7868 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-18 04:12:52.402 DEBUG 7868 --- [main] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2019-12-18 04:12:52.402  INFO 7868 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1473 ms
+2019-12-18 04:12:52.725  INFO 7868 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-18 04:12:52.741 DEBUG 7868 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-12-18 04:12:52.812 DEBUG 7868 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2019-12-18 04:12:52.864 DEBUG 7868 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-12-18 04:12:52.877 DEBUG 7868 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-12-18 04:12:53.017  INFO 7868 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 53362 (http) with context path ''
+2019-12-18 04:12:53.020  INFO 7868 --- [main] .h.s.b.t.HelloSpringBootApplicationTests : Started HelloSpringBootApplicationTests in 2.665 seconds (JVM running for 3.683)
+2019-12-18 04:12:53.325 DEBUG 7868 --- [main] o.s.web.client.RestTemplate              : HTTP GET http://localhost:53362/
+2019-12-18 04:12:53.330 DEBUG 7868 --- [main] o.s.web.client.RestTemplate              : Accept=[text/plain, application/json, application/*+json, */*]
+2019-12-18 04:12:53.406  INFO 7868 --- [http-nio-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-18 04:12:53.407  INFO 7868 --- [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-18 04:12:53.408 DEBUG 7868 --- [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2019-12-18 04:12:53.431 DEBUG 7868 --- [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2019-12-18 04:12:53.431  INFO 7868 --- [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 24 ms
+2019-12-18 04:12:53.440 DEBUG 7868 --- [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2019-12-18 04:12:53.444 DEBUG 7868 --- [http-nio-auto-1-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.funtl.hello.spring.boot.controller.HelloController#sayHi()
+2019-12-18 04:12:53.459 DEBUG 7868 --- [http-nio-auto-1-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [text/plain, application/json, application/*+json, */*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2019-12-18 04:12:53.459 DEBUG 7868 --- [http-nio-auto-1-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello Spring Boot."]
+2019-12-18 04:12:53.467 DEBUG 7868 --- [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-12-18 04:12:53.468 DEBUG 7868 --- [main] o.s.web.client.RestTemplate              : Response 200 OK
+2019-12-18 04:12:53.469 DEBUG 7868 --- [main] o.s.web.client.RestTemplate              : Reading to [java.lang.String] as "text/plain;charset=UTF-8"
+2019-12-18 04:12:53.483  INFO 7868 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
